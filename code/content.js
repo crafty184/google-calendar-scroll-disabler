@@ -32,7 +32,7 @@ var observe_if_calendar_available = function () {
         window.setTimeout(observe_if_calendar_available, 500);
         return;
     }
-    calendar_observer.observe(body, {attributes: true});
+    calendar_observer.observe(body, {attributes: true, childList: true});
 };
 
 observe_if_calendar_available();
